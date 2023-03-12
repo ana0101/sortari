@@ -1,0 +1,80 @@
+Test 1: 1000 numere, 1000 numar maxim
+Heap sort: 0 ms
+Merge sort: 0 ms
+Shell sort: 0 ms
+Counting sort: 0 ms
+Radix sort baza 10: 0 ms
+Radix sort baza 2^8: 0 ms
+Radix sort baza 2^16: 0 ms
+C++ sort: 0 ms
+
+Test 2: 1000 numere, 1000000 numar maxim
+Heap sort: 0 ms
+Merge sort: 0 ms
+Shell sort: 1 ms
+Counting sort: 0 ms
+Radix sort baza 10: 0 ms
+Radix sort baza 2^8: 0 ms
+Radix sort baza 2^16: 0 ms
+C++ sort: 0 ms
+
+Test 3: 10000 numere, 1000 numar maxim
+Heap sort: 1 ms
+Merge sort: 1 ms
+Shell sort: 2 ms
+Counting sort: 0 ms
+Radix sort baza 10: 0 ms
+Radix sort baza 2^8: 0 ms
+Radix sort baza 2^16: 1 ms
+C++ sort: 1 ms
+
+Test 4: 10000 numere, 1000000 numar maxim
+Heap sort: 1 ms
+Merge sort: 1 ms
+Shell sort: 1 ms
+Counting sort: 1 ms
+Radix sort baza 10: 0 ms
+Radix sort baza 2^8: 0 ms
+Radix sort baza 2^16: 1 ms
+C++ sort: 1 ms
+
+Test 5: 100000 numere, 1000 numar maxim
+Heap sort: 18 ms
+Merge sort: 11 ms
+Shell sort: 17 ms
+Counting sort: 1 ms
+Radix sort baza 10: 4 ms
+Radix sort baza 2^8: 2 ms
+Radix sort baza 2^16: 1 ms
+C++ sort: 8 ms
+
+Test 6: 100000 numere, 1000000 numar maxim
+Heap sort: 17 ms
+Merge sort: 12 ms
+Shell sort: 19 ms
+Counting sort: 1 ms
+Radix sort baza 10: 5 ms
+Radix sort baza 2^8: 3 ms
+Radix sort baza 2^16: 1 ms
+C++ sort: 9 ms
+
+Test 7: 1000000 numere, 1000 numar maxim
+Heap sort: 226 ms
+Merge sort: 124 ms
+Shell sort: 199 ms
+Counting sort: 6 ms
+Radix sort baza 10: 33 ms
+Radix sort baza 2^8: 24 ms
+Radix sort baza 2^16: 11 ms
+C++ sort: 97 ms
+
+Test 8: 1000000 numere, 1000000 numar maxim
+Heap sort: 248 ms
+Merge sort: 142 ms
+Shell sort: 244 ms
+Counting sort: 6 ms
+Radix sort baza 10: 53 ms
+Radix sort baza 2^8: 23 ms
+Radix sort baza 2^16: 16 ms
+C++ sort: 114 ms
+
