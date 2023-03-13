@@ -2,7 +2,10 @@
 #include <fstream>
 #include <cstdlib>
 #include <algorithm>
+#include <chrono>
 #include "merge_sort.h"
+#include "quick_sort_pivot_random.h"
+#include "quick_sort_pivot_3.h"
 #include "heap_sort.h"
 #include "shell_sort.h"
 #include "counting_sort.h"
@@ -53,11 +56,12 @@ int main()
 
 
         fout << "Heap sort: ";
-        clock_t start = clock();
+        auto start = std::chrono::high_resolution_clock::now();
         heapSort(v, nrNumere);
-        clock_t stop = clock();
+        auto stop = std::chrono::high_resolution_clock::now();
+        std::chrono::duration<double> durata = stop - start;
         if(verificare2(v, nrNumere) == true)
-            fout << stop - start << " ms\n";
+            fout << durata.count() * 1000 << " ms\n";
         else
             fout << "incorect\n";
 
@@ -65,11 +69,38 @@ int main()
             v[j] = w[j];
 
         fout << "Merge sort: ";
-        start = clock();
+        start = std::chrono::high_resolution_clock::now();
         mergeSort(v, 0, nrNumere-1);
-        stop = clock();
+        stop = std::chrono::high_resolution_clock::now();
+        durata = stop - start;
         if(verificare1(v, nrNumere) == true)
-            fout << stop - start << " ms\n";
+            fout << durata.count() * 1000 << " ms\n";
+        else
+            fout << "incorect\n";
+
+        for(int j=0; j<nrNumere; j++)
+            v[j] = w[j];
+
+        fout << "Quick sort pivot random: ";
+        start = std::chrono::high_resolution_clock::now();
+        quickSort1(v, 0, nrNumere);
+        stop = std::chrono::high_resolution_clock::now();
+        durata = stop - start;
+        if(verificare1(v, nrNumere) == true)
+            fout << durata.count() * 1000 << " ms\n";
+        else
+            fout << "incorect\n";
+
+        for(int j=0; j<nrNumere; j++)
+            v[j] = w[j];
+
+        fout << "Quick sort pivot mediana din 3: ";
+        start = std::chrono::high_resolution_clock::now();
+        quickSort2(v, 0, nrNumere);
+        stop = std::chrono::high_resolution_clock::now();
+        durata = stop - start;
+        if(verificare1(v, nrNumere) == true)
+            fout << durata.count() * 1000 << " ms\n";
         else
             fout << "incorect\n";
 
@@ -77,11 +108,12 @@ int main()
             v[j] = w[j];
 
         fout << "Shell sort: ";
-        start = clock();
+        start = std::chrono::high_resolution_clock::now();
         shellSort(v, nrNumere);
-        stop = clock();
+        stop = std::chrono::high_resolution_clock::now();
+        durata = stop - start;
         if(verificare1(v, nrNumere) == true)
-            fout << stop - start << " ms\n";
+            fout << durata.count() * 1000 << " ms\n";
         else
             fout << "incorect\n";
 
@@ -89,11 +121,12 @@ int main()
             v[j] = w[j];
         
         fout << "Counting sort: ";
-        start = clock();
+        start = std::chrono::high_resolution_clock::now();
         countingSort(v, nrNumere);
-        stop = clock();
+        stop = std::chrono::high_resolution_clock::now();
+        durata = stop - start;
         if(verificare1(v, nrNumere) == true)
-            fout << stop - start << " ms\n";
+            fout << durata.count() * 1000 << " ms\n";
         else
             fout << "incorect\n";
 
@@ -101,11 +134,12 @@ int main()
             v[j] = w[j];
 
         fout << "Radix sort baza 10: ";
-        start = clock();
+        start = std::chrono::high_resolution_clock::now();
         radixSortB10(v, nrNumere);
-        stop = clock();
+        stop = std::chrono::high_resolution_clock::now();
+        durata = stop - start;
         if(verificare1(v, nrNumere) == true)
-            fout << stop - start << " ms\n";
+            fout << durata.count() * 1000 << " ms\n";
         else
             fout << "incorect\n";
 
@@ -113,11 +147,12 @@ int main()
             v[j] = w[j];
 
         fout << "Radix sort baza 2^8: ";
-        start = clock();
+        start = std::chrono::high_resolution_clock::now();
         radixSortB256(v, nrNumere);
-        stop = clock();
+        stop = std::chrono::high_resolution_clock::now();
+        durata = stop - start;
         if(verificare1(v, nrNumere) == true)
-            fout << stop - start << " ms\n";
+            fout << durata.count() * 1000 << " ms\n";
         else
             fout << "incorect\n";
 
@@ -125,11 +160,12 @@ int main()
             v[j] = w[j];
 
         fout << "Radix sort baza 2^16: ";
-        start = clock();
+        start = std::chrono::high_resolution_clock::now();
         radixSortB65536(v, nrNumere);
-        stop = clock();
+        stop = std::chrono::high_resolution_clock::now();
+        durata = stop - start;
         if(verificare1(v, nrNumere) == true)
-            fout << stop - start << " ms\n";
+            fout << durata.count() * 1000 << " ms\n";
         else
             fout << "incorect\n";
 
@@ -137,11 +173,12 @@ int main()
             v[j] = w[j];
 
         fout << "C++ sort: ";
-        start = clock();
+        start = std::chrono::high_resolution_clock::now();
         sort(v, v+nrNumere);
-        stop = clock();
+        stop = std::chrono::high_resolution_clock::now();
+        durata = stop - start;
         if(verificare1(v, nrNumere) == true)
-            fout << stop - start << " ms\n";
+            fout << durata.count() * 1000 << " ms\n";
         else
             fout << "incorect\n";
 

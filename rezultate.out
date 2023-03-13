@@ -1,80 +1,96 @@
 Test 1: 1000 numere, 1000 numar maxim
-Heap sort: 0 ms
-Merge sort: 0 ms
-Shell sort: 0 ms
-Counting sort: 0 ms
-Radix sort baza 10: 0 ms
-Radix sort baza 2^8: 0 ms
-Radix sort baza 2^16: 0 ms
-C++ sort: 0 ms
+Heap sort: 0.0972 ms
+Merge sort: 0.0759 ms
+Quick sort pivot random: 0.145 ms
+Quick sort pivot mediana din 3: 0.1333 ms
+Shell sort: 0.087 ms
+Counting sort: 0.0155 ms
+Radix sort baza 10: 0.032 ms
+Radix sort baza 2^8: 0.0228 ms
+Radix sort baza 2^16: 0.246 ms
+C++ sort: 0.0657 ms
 
 Test 2: 1000 numere, 1000000 numar maxim
-Heap sort: 0 ms
-Merge sort: 0 ms
-Shell sort: 1 ms
-Counting sort: 0 ms
-Radix sort baza 10: 0 ms
-Radix sort baza 2^8: 0 ms
-Radix sort baza 2^16: 0 ms
-C++ sort: 0 ms
+Heap sort: 0.0992 ms
+Merge sort: 0.0738 ms
+Quick sort pivot random: 0.1441 ms
+Quick sort pivot mediana din 3: 0.1264 ms
+Shell sort: 0.0876 ms
+Counting sort: 0.1147 ms
+Radix sort baza 10: 0.0516 ms
+Radix sort baza 2^8: 0.0228 ms
+Radix sort baza 2^16: 0.1379 ms
+C++ sort: 0.064 ms
 
 Test 3: 10000 numere, 1000 numar maxim
-Heap sort: 1 ms
-Merge sort: 1 ms
-Shell sort: 2 ms
-Counting sort: 0 ms
-Radix sort baza 10: 0 ms
-Radix sort baza 2^8: 0 ms
-Radix sort baza 2^16: 1 ms
-C++ sort: 1 ms
+Heap sort: 1.4068 ms
+Merge sort: 0.9547 ms
+Quick sort pivot random: 2.0078 ms
+Quick sort pivot mediana din 3: 1.8501 ms
+Shell sort: 1.235 ms
+Counting sort: 0.064 ms
+Radix sort baza 10: 0.3423 ms
+Radix sort baza 2^8: 0.2165 ms
+Radix sort baza 2^16: 0.2462 ms
+C++ sort: 0.7934 ms
 
 Test 4: 10000 numere, 1000000 numar maxim
-Heap sort: 1 ms
-Merge sort: 1 ms
-Shell sort: 1 ms
-Counting sort: 1 ms
-Radix sort baza 10: 0 ms
-Radix sort baza 2^8: 0 ms
-Radix sort baza 2^16: 1 ms
-C++ sort: 1 ms
+Heap sort: 1.3647 ms
+Merge sort: 0.9707 ms
+Quick sort pivot random: 1.9917 ms
+Quick sort pivot mediana din 3: 1.9025 ms
+Shell sort: 1.3332 ms
+Counting sort: 0.1964 ms
+Radix sort baza 10: 0.5121 ms
+Radix sort baza 2^8: 0.2236 ms
+Radix sort baza 2^16: 0.2436 ms
+C++ sort: 0.8709 ms
 
 Test 5: 100000 numere, 1000 numar maxim
-Heap sort: 18 ms
-Merge sort: 11 ms
-Shell sort: 17 ms
-Counting sort: 1 ms
-Radix sort baza 10: 4 ms
-Radix sort baza 2^8: 2 ms
-Radix sort baza 2^16: 1 ms
-C++ sort: 8 ms
+Heap sort: 21.8284 ms
+Merge sort: 11.647 ms
+Quick sort pivot random: 45.4472 ms
+Quick sort pivot mediana din 3: 46.9166 ms
+Shell sort: 16.8769 ms
+Counting sort: 0.5666 ms
+Radix sort baza 10: 3.5057 ms
+Radix sort baza 2^8: 2.4644 ms
+Radix sort baza 2^16: 1.5889 ms
+C++ sort: 9.2481 ms
 
 Test 6: 100000 numere, 1000000 numar maxim
-Heap sort: 17 ms
-Merge sort: 12 ms
-Shell sort: 19 ms
-Counting sort: 1 ms
-Radix sort baza 10: 5 ms
-Radix sort baza 2^8: 3 ms
-Radix sort baza 2^16: 1 ms
-C++ sort: 9 ms
+Heap sort: 22.0438 ms
+Merge sort: 13.0309 ms
+Quick sort pivot random: 26.2395 ms
+Quick sort pivot mediana din 3: 23.3991 ms
+Shell sort: 20.5868 ms
+Counting sort: 1.1424 ms
+Radix sort baza 10: 6.6782 ms
+Radix sort baza 2^8: 3.1683 ms
+Radix sort baza 2^16: 1.4665 ms
+C++ sort: 11.3581 ms
 
 Test 7: 1000000 numere, 1000 numar maxim
-Heap sort: 226 ms
-Merge sort: 124 ms
-Shell sort: 199 ms
-Counting sort: 6 ms
-Radix sort baza 10: 33 ms
-Radix sort baza 2^8: 24 ms
-Radix sort baza 2^16: 11 ms
-C++ sort: 97 ms
+Heap sort: 247.942 ms
+Merge sort: 123.285 ms
+Quick sort pivot random: 2840.23 ms
+Quick sort pivot mediana din 3: 2882.77 ms
+Shell sort: 198.965 ms
+Counting sort: 6.0369 ms
+Radix sort baza 10: 33.1014 ms
+Radix sort baza 2^8: 25.2962 ms
+Radix sort baza 2^16: 17.034 ms
+C++ sort: 103.549 ms
 
 Test 8: 1000000 numere, 1000000 numar maxim
-Heap sort: 248 ms
-Merge sort: 142 ms
-Shell sort: 244 ms
-Counting sort: 6 ms
-Radix sort baza 10: 53 ms
-Radix sort baza 2^8: 23 ms
-Radix sort baza 2^16: 16 ms
-C++ sort: 114 ms
+Heap sort: 255.877 ms
+Merge sort: 141.517 ms
+Quick sort pivot random: 308.791 ms
+Quick sort pivot mediana din 3: 308.112 ms
+Shell sort: 249.122 ms
+Counting sort: 6.0124 ms
+Radix sort baza 10: 53.467 ms
+Radix sort baza 2^8: 22.2501 ms
+Radix sort baza 2^16: 16.5478 ms
+C++ sort: 115.176 ms
 
