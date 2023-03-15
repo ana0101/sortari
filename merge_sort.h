@@ -1,9 +1,8 @@
-int aux[10000005];
+int aux[100000005];
 
 void interclasare(int v[], int st, int mij, int dr)
 {
     int i = st, j = mij+1, k = 0;
-    //int aux[dr-st+2];
     while(i <= mij && j <= dr)
     {
         if(v[i] <= v[j])
