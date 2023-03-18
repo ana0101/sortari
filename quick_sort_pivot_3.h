@@ -12,15 +12,16 @@ int mediana(int e1, int e2, int e3)
 }
 
 
-void quickSort2(int v[], int inc, int sf)
+void quickSort2(int v[], int n)
 {
-    if(inc < sf)
+    if(n >= 2)
     {
+        int inc = 0, sf = n-1;
+        srand(time(0));
         int pivot = mediana(v[inc], v[(inc+sf)/2], v[sf]);
-        int poz[3];
-        ordonare(v, inc, sf, pivot, poz);
-        int lim1 = poz[0], lim2 = poz[1];
-        quickSort2(v, inc, lim1-1);
-        quickSort2(v, lim2, sf);
+        ordonare(v, pivot, inc, sf);
+        
+        quickSort2(v, sf+1);
+        quickSort2(&v[inc], n-inc);
     }
 }

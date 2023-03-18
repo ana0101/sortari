@@ -1,44 +1,31 @@
-void ordonare(int v[], int inc, int sf, int pivot, int poz[])
+void ordonare(int v[], int pivot, int &inc, int &sf)
 {
-    int lim1 = inc, lim2 = inc, lim3 = sf;
-    //inc - lim1: < pivot
-    //lim1 - lim2: == pivot
-    //lim2 - lim3: neprocesate inca
-    //lim3 - sf: > pivot
-    while(lim2 <= lim3)
+    while (inc <= sf)
     {
-        if(v[lim2] < pivot)
+        while (v[inc] < pivot)
+            inc++;
+        while (v[sf] > pivot)
+            sf--;
+        if (inc <= sf)
         {
-            std::swap(v[lim1], v[lim2]);
-            lim1 ++;
-            lim2 ++;
-        }
-        else
-        {
-            if(v[lim2] > pivot)
-            {
-                std::swap(v[lim2], v[lim3]);
-                lim3 --;
-            }
-            else
-                lim2 ++;
+            std::swap(v[inc], v[sf]);
+            inc++;
+            sf--;
         }
     }
-    poz[0] = lim1, poz[1] = lim2;
 }
 
-
-void quickSort1(int v[], int inc, int sf)
+void quickSort1(int v[], int n)
 {
-    if(inc < sf)
+    if (n >= 2)
     {
+        int inc = 0, sf = n - 1;
         srand(time(0));
-        int poz_pivot = inc + rand() % (sf-inc);
+        int poz_pivot = rand() % (n - 1);
         int pivot = v[poz_pivot];
-        int poz[3];
-        ordonare(v, inc, sf, pivot, poz);
-        int lim1 = poz[0], lim2 = poz[1];
-        quickSort1(v, inc, lim1-1);
-        quickSort1(v, lim2, sf);
+        ordonare(v, pivot, inc, sf);
+
+        quickSort1(v, sf + 1);
+        quickSort1(&v[inc], n - inc);
     }
 }
