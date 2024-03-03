@@ -1,2 +1,6 @@
-Proiect 1 Structuri de Date
-Compararea a 5 algoritmi de sortare: heap sort, merge sort, quick sort (cu pivot random si mediana din 3), shell sort, radix sort (in bazele 10, 2^8 si 2^16), plus algoritmul de sortare din c++
+# Sorting Algorithms Comparison
+
+This repo contains a project that compares the efficiency of the following sorting algorithms: heap sort, merge sort, quick sort (with random pivot and the median of 3 pivot), shell sort, radix sort (in bases 10, 2^8 and 2^16) and the C++ sorting algorithm
+
+
+Input file teste.in: number of tests on the first line, then on each line the number of elements in the test and the largest element in the test
