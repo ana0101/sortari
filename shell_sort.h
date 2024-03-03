@@ -1,17 +1,17 @@
 void shellSort(int v[], int n)
 {
-    for(int h=n/2; h>0; h/=2)
+    for(int d=n/2; d>0; d/=2)
     {
-        for(int i=h; i<n; i++)
+        for(int i=d; i<n; i++)
         {
             int aux = v[i];
-            int j = i - h;
+            int j = i - d;
             while(j>=0 && v[j]>aux)
             {
-                v[j+h] = v[j];
-                j -= h;
+                v[j+d] = v[j];
+                j -= d;
             }
-            v[j+h] = aux;
+            v[j+d] = aux;
         }
     }
 }
